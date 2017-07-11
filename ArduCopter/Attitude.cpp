@@ -212,6 +212,29 @@ float Copter::get_pilot_desired_climb_rate(float throttle_control)
     return desired_rate;
 }
 
+
+// get_pilot_desired_altitude - transform pilot's throttle input to climb rate in cm
+// without any deadzone at the bottom
+float Copter::get_pilot_desired_altitude( float altitude_control)
+{
+    // throttle failsafe check
+    if( failsafe.radio ) {
+        return 100.0f;
+    }
+
+    float desired_altitude = 0.0f;
+    float altitude_max = 200.0f;
+    float altitude_min = 0.0f;
+    // ensure a reasonable throttle value
+    altitude_control = constrain_float(altitude_control,0.0f,1000.0f);
+
+    desired_altitude = altitude_control/1000.0*(altitude_max-altitude_min);
+    desired_altitude = desired_altitude < 10.0f ? 10.0f : desired_altitude;
+
+    return desired_altitude;
+}
+
+
 // get_non_takeoff_throttle - a throttle somewhere between min and mid throttle which should not lead to a takeoff
 float Copter::get_non_takeoff_throttle()
 {

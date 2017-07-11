@@ -94,6 +94,8 @@ if [ ! -d $OPT/$ARM_ROOT ]; then
         cd $OPT;
         sudo -E  wget $ARM_TARBALL_URL;
         sudo -E  tar xjf ${ARM_TARBALL};
+        sudo wget $ARM_TARBALL_URL;
+        sudo tar xjf ${ARM_TARBALL};
         sudo rm ${ARM_TARBALL};
     )
 fi
