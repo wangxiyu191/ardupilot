@@ -87,13 +87,13 @@ sudo usermod -a -G dialout $USER
 $APT_GET remove modemmanager
 $APT_GET update
 $APT_GET install $BASE_PKGS $SITL_PKGS $PX4_PKGS $ARM_LINUX_PKGS
-sudo pip2 -q install -U $PYTHON_PKGS
+sudo -E pip2 -q install -U $PYTHON_PKGS
 
 if [ ! -d $OPT/$ARM_ROOT ]; then
     (
         cd $OPT;
-        sudo wget $ARM_TARBALL_URL;
-        sudo tar xjf ${ARM_TARBALL};
+        sudo -E  wget $ARM_TARBALL_URL;
+        sudo -E  tar xjf ${ARM_TARBALL};
         sudo rm ${ARM_TARBALL};
     )
 fi
