@@ -79,6 +79,7 @@ void Copter::eidc_althold_run()
     float target_yaw_rate = 0.0f;
     float target_climb_rate = 0.0f;
     float takeoff_climb_rate = 0.0f;
+    float target_climb_altitude = 0.0f;
 
     // initialize vertical speed and acceleration
     pos_control->set_speed_z(-g.pilot_velocity_z_max, g.pilot_velocity_z_max);
@@ -96,8 +97,12 @@ void Copter::eidc_althold_run()
         target_yaw_rate = get_pilot_desired_yaw_rate(channel_yaw->get_control_in());
 
         // get pilot desired climb rate
-        target_climb_rate = get_pilot_desired_climb_rate(channel_throttle->get_control_in());
+        target_climb_rate = 2.5;
         target_climb_rate = constrain_float(target_climb_rate, -g.pilot_velocity_z_max, g.pilot_velocity_z_max);
+
+        target_climb_altitude = get_pilot_desired_altitude(channel_throttle->get_control_in());
+        pos_control->set_alt_target(target_climb_altitude);
+
     } else {
         // clear out pilot desired acceleration in case radio failsafe event occurs and we do not switch to RTL for some reason
         wp_nav->clear_pilot_desired_acceleration();
@@ -112,7 +117,7 @@ void Copter::eidc_althold_run()
     // helicopters are held on the ground until rotor speed runup has finished
     bool takeoff_triggered = (ap.land_complete && (target_climb_rate > 0.0f) && motors->rotor_runup_complete());
 #else
-    bool takeoff_triggered = ap.land_complete && (target_climb_rate > 0.0f);
+    bool takeoff_triggered = ap.land_complete && (target_climb_rate > 0.0f) && (target_climb_altitude > 10.0f);
 #endif
 
     // Loiter State Machine Determination
@@ -172,8 +177,8 @@ void Copter::eidc_althold_run()
         attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(wp_nav->get_roll(), wp_nav->get_pitch(), target_yaw_rate, get_smoothing_gain());
 
         // update altitude target and call position controller
-        pos_control->set_alt_target_from_climb_rate_ff(target_climb_rate, G_Dt, false);
         pos_control->add_takeoff_climb_rate(takeoff_climb_rate, G_Dt);
+        //pos_control->set_alt_target(target_climb_altitude);
         pos_control->update_z_controller();
         break;
 
@@ -210,16 +215,17 @@ void Copter::eidc_althold_run()
         attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(wp_nav->get_roll(), wp_nav->get_pitch(), target_yaw_rate, get_smoothing_gain());
 
         // adjust climb rate using rangefinder
-        if (rangefinder_alt_ok()) {
-            // if rangefinder is ok, use surface tracking
-            target_climb_rate = get_surface_tracking_climb_rate(target_climb_rate, pos_control->get_alt_target(), G_Dt);
-        }
+        //if (rangefinder_alt_ok()) {
+        //    // if rangefinder is ok, use surface tracking
+        //    target_climb_rate = get_surface_tracking_climb_rate(target_climb_rate, pos_control->get_alt_target(), G_Dt);
+        //}
 
         // get avoidance adjusted climb rate
-        target_climb_rate = get_avoidance_adjusted_climbrate(target_climb_rate);
+        //target_climb_rate = get_avoidance_adjusted_climbrate(target_climb_rate);
 
         // update altitude target and call position controller
-        pos_control->set_alt_target_from_climb_rate_ff(target_climb_rate, G_Dt, false);
+
+        pos_control->set_alt_target(target_climb_altitude);;
         pos_control->update_z_controller();
         break;
     }
