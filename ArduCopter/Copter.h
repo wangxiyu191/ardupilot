@@ -99,6 +99,7 @@
 #include "config.h"
 
 #include "GCS_Mavlink.h"
+#include "GCS_Copter.h"
 #include "AP_Rally.h"           // Rally point library
 #include "AP_Arming.h"
 
@@ -136,6 +137,7 @@
 class Copter : public AP_HAL::HAL::Callbacks {
 public:
     friend class GCS_MAVLINK_Copter;
+    friend class GCS_Copter;
     friend class AP_Rally_Copter;
     friend class Parameters;
     friend class ParametersG2;
@@ -245,11 +247,8 @@ private:
 
     // GCS selection
     AP_SerialManager serial_manager;
-    static const uint8_t num_gcs = MAVLINK_COMM_NUM_BUFFERS;
-
-    GCS_MAVLINK_Copter gcs_chan[MAVLINK_COMM_NUM_BUFFERS];
-    GCS _gcs; // avoid using this; use gcs()
-    GCS &gcs() { return _gcs; }
+    GCS_Copter _gcs; // avoid using this; use gcs()
+    GCS_Copter &gcs() { return _gcs; }
 
     // User variables
 #ifdef USERHOOK_VARIABLES
@@ -726,7 +725,6 @@ private:
     void gcs_send_mission_item_reached_message(uint16_t mission_index);
     void gcs_data_stream_send(void);
     void gcs_check_input(void);
-    void gcs_send_text(MAV_SEVERITY severity, const char *str);
     void do_erase_logs(void);
     void Log_Write_AutoTune(uint8_t axis, uint8_t tune_step, float meas_target, float meas_min, float meas_max, float new_gain_rp, float new_gain_rd, float new_gain_sp, float new_ddt);
     void Log_Write_AutoTuneDetails(float angle_cd, float rate_cds);
@@ -1114,7 +1112,6 @@ private:
     void takeoff_get_climb_rates(float& pilot_climb_rate, float& takeoff_climb_rate);
     void print_hit_enter();
     void tuning();
-    void gcs_send_text_fmt(MAV_SEVERITY severity, const char *fmt, ...);
     bool start_command(const AP_Mission::Mission_Command& cmd);
     bool verify_command(const AP_Mission::Mission_Command& cmd);
     bool verify_command_callback(const AP_Mission::Mission_Command& cmd);
