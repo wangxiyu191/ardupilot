@@ -92,7 +92,7 @@ sudo pip2 -q install -U $PYTHON_PKGS
 if [ ! -d $OPT/$ARM_ROOT ]; then
     (
         cd $OPT;
-        sudo wget $ARM_TARBALL_URL;
+#        sudo wget $ARM_TARBALL_URL;
         sudo tar xjf ${ARM_TARBALL};
         sudo rm ${ARM_TARBALL};
     )

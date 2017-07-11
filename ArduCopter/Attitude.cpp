@@ -212,6 +212,44 @@ float Copter::get_pilot_desired_climb_rate(float throttle_control)
     return desired_rate;
 }
 
+
+// get_pilot_desired_climb_rate - transform pilot's throttle input to climb rate in cm/s
+// without any deadzone at the bottom
+//EIDCTODO：完成该函数，加header
+float Copter::get_pilot_desired_altitude(float throttle_control)
+{
+    // throttle failsafe check
+    if( failsafe.radio ) {
+        return 0.0f;
+    }
+
+    float desired_rate = 0.0f;
+    float mid_stick = channel_throttle->get_control_mid();
+    float deadband_top = mid_stick + g.throttle_deadzone;
+    float deadband_bottom = mid_stick - g.throttle_deadzone;
+
+    // ensure a reasonable throttle value
+    throttle_control = constrain_float(throttle_control,0.0f,1000.0f);
+
+    // ensure a reasonable deadzone
+    g.throttle_deadzone = constrain_int16(g.throttle_deadzone, 0, 400);
+
+    // check throttle is above, below or in the deadband
+    if (throttle_control < deadband_bottom) {
+        // below the deadband
+        desired_rate = g.pilot_velocity_z_max * (throttle_control-deadband_bottom) / deadband_bottom;
+    }else if (throttle_control > deadband_top) {
+        // above the deadband
+        desired_rate = g.pilot_velocity_z_max * (throttle_control-deadband_top) / (1000.0f-deadband_top);
+    }else{
+        // must be in the deadband
+        desired_rate = 0.0f;
+    }
+
+    return desired_rate;
+}
+
+
 // get_non_takeoff_throttle - a throttle somewhere between min and mid throttle which should not lead to a takeoff
 float Copter::get_non_takeoff_throttle()
 {
