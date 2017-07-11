@@ -108,6 +108,9 @@ bool Copter::set_mode(control_mode_t mode, mode_reason_t reason)
         case GUIDED_NOGPS:
             success = guided_nogps_init(ignore_checks);
             break;
+        case EIDC_ALT_HOLD:
+        	success = eidc_althold_init(ignore_checks);
+        	break;
 
         default:
             success = false;
@@ -244,6 +247,10 @@ void Copter::update_flight_mode()
 
         case GUIDED_NOGPS:
             guided_nogps_run();
+            break;
+
+        case EIDC_ALT_HOLD:
+            eidc_althold_run();
             break;
 
         default:
@@ -419,6 +426,9 @@ void Copter::notify_flight_mode(control_mode_t mode)
         case GUIDED_NOGPS:
             notify.set_flight_mode_str("GNGP");
             break;
+        case EIDC_ALT_HOLD:
+        	notify.set_flight_mode_str("EALT");
+            break;
         default:
             notify.set_flight_mode_str("----");
             break;
@@ -484,6 +494,9 @@ void Copter::print_flight_mode(AP_HAL::BetterStream *port, uint8_t mode)
         break;
     case GUIDED_NOGPS:
         port->printf("GUIDED_NOGPS");
+        break;
+    case EIDC_ALT_HOLD:
+        port->printf("EIDC_ALT_HOLD");
         break;
     default:
         port->printf("Mode(%u)", (unsigned)mode);
