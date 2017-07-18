@@ -8,12 +8,12 @@
 
 void Sub::gcs_send_heartbeat(void)
 {
-    gcs_send_message(MSG_HEARTBEAT);
+    gcs().send_message(MSG_HEARTBEAT);
 }
 
 void Sub::gcs_send_deferred(void)
 {
-    gcs_send_message(MSG_RETRY_DEFERRED);
+    gcs().send_message(MSG_RETRY_DEFERRED);
     gcs().service_statustext();
 }
 
@@ -428,10 +428,15 @@ void Sub::send_pid_tuning(mavlink_channel_t chan)
     }
 }
 
+uint8_t GCS_MAVLINK_Sub::sysid_my_gcs() const
+{
+    return sub.g.sysid_my_gcs;
+}
+
 // try to send a message, return false if it won't fit in the serial tx buffer
 bool GCS_MAVLINK_Sub::try_send_message(enum ap_message id)
 {
-    if (telemetry_delayed(chan)) {
+    if (telemetry_delayed()) {
         return false;
     }
 
@@ -932,50 +937,6 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
         break;
     }
 
-    case MAVLINK_MSG_ID_MISSION_WRITE_PARTIAL_LIST: { // MAV ID: 38
-        handle_mission_write_partial_list(sub.mission, msg);
-        break;
-    }
-
-    // GCS has sent us a mission item, store to EEPROM
-    case MAVLINK_MSG_ID_MISSION_ITEM:
-    case MAVLINK_MSG_ID_MISSION_ITEM_INT: {         // MAV ID: 39
-        if (handle_mission_item(msg, sub.mission)) {
-            sub.DataFlash.Log_Write_EntireMission(sub.mission);
-        }
-        break;
-    }
-
-    // read an individual command from EEPROM and send it to the GCS
-    case MAVLINK_MSG_ID_MISSION_REQUEST_INT:
-    case MAVLINK_MSG_ID_MISSION_REQUEST: {   // MAV ID: 40, 51
-        handle_mission_request(sub.mission, msg);
-        break;
-    }
-
-    case MAVLINK_MSG_ID_MISSION_SET_CURRENT: {  // MAV ID: 41
-        handle_mission_set_current(sub.mission, msg);
-        break;
-    }
-
-    // GCS request the full list of commands, we return just the number and leave the GCS to then request each command individually
-    case MAVLINK_MSG_ID_MISSION_REQUEST_LIST: {     // MAV ID: 43
-        handle_mission_request_list(sub.mission, msg);
-        break;
-    }
-
-    // GCS provides the full number of commands it wishes to upload
-    //  individual commands will then be sent from the GCS using the MAVLINK_MSG_ID_MISSION_ITEM message
-    case MAVLINK_MSG_ID_MISSION_COUNT: {        // MAV ID: 44
-        handle_mission_count(sub.mission, msg);
-        break;
-    }
-
-    case MAVLINK_MSG_ID_MISSION_CLEAR_ALL: {    // MAV ID: 45
-        handle_mission_clear_all(sub.mission, msg);
-        break;
-    }
-
     case MAVLINK_MSG_ID_REQUEST_DATA_STREAM: {  // MAV ID: 66
         handle_request_data_stream(msg, false);
         break;
@@ -1269,22 +1230,6 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
             }
             break;
 
-        case MAV_CMD_PREFLIGHT_SET_SENSOR_OFFSETS: {
-            uint8_t compassNumber = -1;
-            if (is_equal(packet.param1, 2.0f)) {
-                compassNumber = 0;
-            } else if (is_equal(packet.param1, 5.0f)) {
-                compassNumber = 1;
-            } else if (is_equal(packet.param1, 6.0f)) {
-                compassNumber = 2;
-            }
-            if (compassNumber != (uint8_t) -1) {
-                sub.compass.set_and_save_offsets(compassNumber, packet.param2, packet.param3, packet.param4);
-                result = MAV_RESULT_ACCEPTED;
-            }
-            break;
-        }
-
         case MAV_CMD_COMPONENT_ARM_DISARM:
             if (is_equal(packet.param1,1.0f)) {
                 // attempt to arm and return success or failure
@@ -1304,30 +1249,6 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
         case MAV_CMD_GET_HOME_POSITION:
             if (sub.ap.home_state != HOME_UNSET) {
                 send_home(sub.ahrs.get_home());
-                result = MAV_RESULT_ACCEPTED;
-            }
-            break;
-
-        case MAV_CMD_DO_SET_SERVO:
-            if (sub.ServoRelayEvents.do_set_servo(packet.param1, packet.param2)) {
-                result = MAV_RESULT_ACCEPTED;
-            }
-            break;
-
-        case MAV_CMD_DO_REPEAT_SERVO:
-            if (sub.ServoRelayEvents.do_repeat_servo(packet.param1, packet.param2, packet.param3, packet.param4*1000)) {
-                result = MAV_RESULT_ACCEPTED;
-            }
-            break;
-
-        case MAV_CMD_DO_SET_RELAY:
-            if (sub.ServoRelayEvents.do_set_relay(packet.param1, packet.param2)) {
-                result = MAV_RESULT_ACCEPTED;
-            }
-            break;
-
-        case MAV_CMD_DO_REPEAT_RELAY:
-            if (sub.ServoRelayEvents.do_repeat_relay(packet.param1, packet.param2, packet.param3*1000)) {
                 result = MAV_RESULT_ACCEPTED;
             }
             break;
@@ -1410,13 +1331,6 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
             break;
         }
 
-        case MAV_CMD_DO_START_MAG_CAL:
-        case MAV_CMD_DO_ACCEPT_MAG_CAL:
-        case MAV_CMD_DO_CANCEL_MAG_CAL:
-            result = sub.compass.handle_mag_cal_command(packet);
-
-            break;
-
         case MAV_CMD_DO_SEND_BANNER: {
             result = MAV_RESULT_ACCEPTED;
 
@@ -1436,7 +1350,7 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
         }
 
         default:
-            result = MAV_RESULT_UNSUPPORTED;
+            result = handle_command_long_message(packet);
             break;
         }
 
@@ -1649,7 +1563,7 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
         // send or receive fence points with GCS
     case MAVLINK_MSG_ID_FENCE_POINT:            // MAV ID: 160
     case MAVLINK_MSG_ID_FENCE_FETCH_POINT:
-        sub.fence.handle_msg(chan, msg);
+        sub.fence.handle_msg(*this, msg);
         break;
 #endif // AC_FENCE == ENABLED
 
@@ -1682,68 +1596,6 @@ void GCS_MAVLINK_Sub::handleMessage(mavlink_message_t* msg)
         sub.terrain.handle_data(chan, msg);
 #endif
         break;
-
-#if AC_RALLY == ENABLED
-        // receive a rally point from GCS and store in EEPROM
-    case MAVLINK_MSG_ID_RALLY_POINT: {
-        mavlink_rally_point_t packet;
-        mavlink_msg_rally_point_decode(msg, &packet);
-
-        if (packet.idx >= sub.rally.get_rally_total() ||
-                packet.idx >= sub.rally.get_rally_max()) {
-            send_text(MAV_SEVERITY_NOTICE,"Bad rally point message ID");
-            break;
-        }
-
-        if (packet.count != sub.rally.get_rally_total()) {
-            send_text(MAV_SEVERITY_NOTICE,"Bad rally point message count");
-            break;
-        }
-
-        // sanity check location
-        if (!check_latlng(packet.lat, packet.lng)) {
-            break;
-        }
-
-        RallyLocation rally_point;
-        rally_point.lat = packet.lat;
-        rally_point.lng = packet.lng;
-        rally_point.alt = packet.alt;
-        rally_point.break_alt = packet.break_alt;
-        rally_point.land_dir = packet.land_dir;
-        rally_point.flags = packet.flags;
-
-        if (!sub.rally.set_rally_point_with_index(packet.idx, rally_point)) {
-            send_text(MAV_SEVERITY_CRITICAL, "Error setting rally point");
-        }
-
-        break;
-    }
-
-    //send a rally point to the GCS
-    case MAVLINK_MSG_ID_RALLY_FETCH_POINT: {
-        mavlink_rally_fetch_point_t packet;
-        mavlink_msg_rally_fetch_point_decode(msg, &packet);
-
-        if (packet.idx > sub.rally.get_rally_total()) {
-            send_text(MAV_SEVERITY_NOTICE, "Bad rally point index");
-            break;
-        }
-
-        RallyLocation rally_point;
-        if (!sub.rally.get_rally_point_with_index(packet.idx, rally_point)) {
-            send_text(MAV_SEVERITY_NOTICE, "Failed to set rally point");
-            break;
-        }
-
-        mavlink_msg_rally_point_send_buf(msg,
-                                         chan, msg->sysid, msg->compid, packet.idx,
-                                         sub.rally.get_rally_total(), rally_point.lat, rally_point.lng,
-                                         rally_point.alt, rally_point.break_alt, rally_point.land_dir,
-                                         rally_point.flags);
-        break;
-    }
-#endif // AC_RALLY == ENABLED
 
     case MAVLINK_MSG_ID_AUTOPILOT_VERSION_REQUEST:
         send_autopilot_version(FIRMWARE_VERSION);
@@ -1815,7 +1667,7 @@ void Sub::mavlink_delay_cb()
     if (tnow - last_1hz > 1000) {
         last_1hz = tnow;
         gcs_send_heartbeat();
-        gcs_send_message(MSG_EXTENDED_STATUS1);
+        gcs().send_message(MSG_EXTENDED_STATUS1);
     }
     if (tnow - last_50hz > 20) {
         last_50hz = tnow;
@@ -1834,22 +1686,6 @@ void Sub::mavlink_delay_cb()
 }
 
 /*
- *  send a message on both GCS links
- */
-void Sub::gcs_send_message(enum ap_message id)
-{
-    gcs().send_message(id);
-}
-
-/*
- *  send a mission item reached message and load the index before the send attempt in case it may get delayed
- */
-void Sub::gcs_send_mission_item_reached_message(uint16_t mission_index)
-{
-    gcs().send_mission_item_reached_message(mission_index);
-}
-
-/*
  *  send data streams in the given rate range on both links
  */
 void Sub::gcs_data_stream_send(void)
@@ -1863,4 +1699,28 @@ void Sub::gcs_data_stream_send(void)
 void Sub::gcs_check_input(void)
 {
     gcs().update();
+}
+
+Compass *GCS_MAVLINK_Sub::get_compass() const
+{
+    return &sub.compass;
+}
+
+AP_Mission *GCS_MAVLINK_Sub::get_mission()
+{
+    return &sub.mission;
+}
+
+AP_ServoRelayEvents *GCS_MAVLINK_Sub::get_servorelayevents() const
+{
+    return &sub.ServoRelayEvents;
+}
+
+AP_Rally *GCS_MAVLINK_Sub::get_rally() const
+{
+#if AC_RALLY == ENABLED
+    return &sub.rally;
+#else
+    return nullptr;
+#endif
 }

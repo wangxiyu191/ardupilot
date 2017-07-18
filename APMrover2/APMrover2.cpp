@@ -46,7 +46,7 @@ const AP_Scheduler::Task Rover::scheduler_tasks[] = {
     //         Function name,          Hz,     us,
     SCHED_TASK(read_radio,             50,   1000),
     SCHED_TASK(ahrs_update,            50,   6400),
-    SCHED_TASK(read_sonars,            50,   2000),
+    SCHED_TASK(read_rangefinders,      50,   2000),
     SCHED_TASK(update_current_mode,    50,   1500),
     SCHED_TASK(set_servos,             50,   1500),
     SCHED_TASK(update_GPS_50Hz,        50,   2500),
@@ -54,6 +54,7 @@ const AP_Scheduler::Task Rover::scheduler_tasks[] = {
     SCHED_TASK(update_alt,             10,   3400),
     SCHED_TASK(update_beacon,          50,     50),
     SCHED_TASK(update_visual_odom,     50,     50),
+    SCHED_TASK(update_wheel_encoder,   50,     50),
     SCHED_TASK(navigate,               10,   1600),
     SCHED_TASK(update_compass,         10,   2000),
     SCHED_TASK(update_commands,        10,   1000),
@@ -208,7 +209,7 @@ void Rover::update_trigger(void)
 #if CAMERA == ENABLED
     camera.trigger_pic_cleanup();
     if (camera.check_trigger_pin()) {
-        gcs_send_message(MSG_CAMERA_FEEDBACK);
+        gcs().send_message(MSG_CAMERA_FEEDBACK);
         if (should_log(MASK_LOG_CAMERA)) {
             DataFlash.Log_Write_Camera(ahrs, gps, current_loc);
         }
@@ -283,6 +284,7 @@ void Rover::update_logging2(void)
 
     if (should_log(MASK_LOG_RC)) {
         Log_Write_RC();
+        Log_Write_WheelEncoder();
     }
 
     if (should_log(MASK_LOG_IMU)) {
@@ -308,7 +310,7 @@ void Rover::one_second_loop(void)
         Log_Write_Current();
     }
     // send a heartbeat
-    gcs_send_message(MSG_HEARTBEAT);
+    gcs().send_message(MSG_HEARTBEAT);
 
     // allow orientation change at runtime to aid config
     ahrs.set_orientation();
@@ -439,7 +441,7 @@ void Rover::update_current_mode(void)
             if (rtl_complete || verify_RTL()) {
                 // we have reached destination so stop where we are
                 if (fabsf(g2.motors.get_throttle()) > g.throttle_min.get()) {
-                    gcs_send_mission_item_reached_message(0);
+                    gcs().send_mission_item_reached_message(0);
                 }
                 g2.motors.set_throttle(g.throttle_min.get());
                 g2.motors.set_steering(0.0f);

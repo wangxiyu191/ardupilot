@@ -492,6 +492,11 @@ void Tracker::mavlink_check_target(const mavlink_message_t* msg)
     target_set = true;
 }
 
+uint8_t GCS_MAVLINK_Tracker::sysid_my_gcs() const
+{
+    return tracker.g.sysid_my_gcs;
+}
+
 void GCS_MAVLINK_Tracker::handleMessage(mavlink_message_t* msg)
 {
     switch (msg->msgid) {
@@ -652,12 +657,6 @@ void GCS_MAVLINK_Tracker::handleMessage(mavlink_message_t* msg)
                 break;
             }
 
-            case MAV_CMD_DO_START_MAG_CAL:
-            case MAV_CMD_DO_ACCEPT_MAG_CAL:
-            case MAV_CMD_DO_CANCEL_MAG_CAL:
-                result = tracker.compass.handle_mag_cal_command(packet);
-                break;
-
             case MAV_CMD_ACCELCAL_VEHICLE_POS:
                 result = MAV_RESULT_FAILED;
 
@@ -667,6 +666,7 @@ void GCS_MAVLINK_Tracker::handleMessage(mavlink_message_t* msg)
                 break;
 
             default:
+                result = handle_command_long_message(packet);
                 break;
         }
         mavlink_msg_command_ack_send(
@@ -857,8 +857,8 @@ void Tracker::mavlink_delay_cb()
     uint32_t tnow = AP_HAL::millis();
     if (tnow - last_1hz > 1000) {
         last_1hz = tnow;
-        gcs_send_message(MSG_HEARTBEAT);
-        gcs_send_message(MSG_EXTENDED_STATUS1);
+        gcs().send_message(MSG_HEARTBEAT);
+        gcs().send_message(MSG_EXTENDED_STATUS1);
     }
     if (tnow - last_50hz > 20) {
         last_50hz = tnow;
@@ -872,14 +872,6 @@ void Tracker::mavlink_delay_cb()
     }
     DataFlash.EnableWrites(true);
     tracker.in_mavlink_delay = false;
-}
-
-/*
- *  send a message on both GCS links
- */
-void Tracker::gcs_send_message(enum ap_message id)
-{
-    gcs().send_message(id);
 }
 
 /*
@@ -903,6 +895,11 @@ void Tracker::gcs_update(void)
  */
 void Tracker::gcs_retry_deferred(void)
 {
-    gcs_send_message(MSG_RETRY_DEFERRED);
+    gcs().send_message(MSG_RETRY_DEFERRED);
     gcs().service_statustext();
+}
+
+Compass *GCS_MAVLINK_Tracker::get_compass() const
+{
+    return &tracker.compass;
 }

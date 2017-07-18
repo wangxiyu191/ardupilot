@@ -156,8 +156,8 @@ void Rover::init_ardupilot()
     // initialise compass
     init_compass();
 
-    // initialise sonar
-    init_sonar();
+    // initialise rangefinder
+    init_rangefinder();
 
     // init beacons used for non-gps position estimation
     init_beacon();
@@ -180,6 +180,9 @@ void Rover::init_ardupilot()
     init_rc_in();            // sets up rc channels deadzone
     g2.motors.init();        // init motors including setting servo out channels ranges
     init_rc_out();           // enable output
+
+    // init wheel encoders
+    g2.wheel_encoder.init();
 
     relay.init();
 
