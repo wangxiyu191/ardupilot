@@ -410,6 +410,7 @@ bool Copter::optflow_position_ok()
     // return immediately if neither optflow nor visual odometry is enabled
     bool enabled = false;
 #if OPTFLOW == ENABLED
+
     if (optflow.enabled()) {
         enabled = true;
     }
@@ -422,12 +423,14 @@ bool Copter::optflow_position_ok()
     if (!enabled) {
         return false;
     }
+    //cliSerial->printf("optflow: %s",enabled?"ENABLED":"DISABLED");
 
     // get filter status from EKF
     nav_filter_status filt_status = inertial_nav.get_filter_status();
 
     // if disarmed we accept a predicted horizontal relative position
     if (!motors->armed()) {
+    	//cliSerial->printf("optflow: %s",filt_status.flags.pred_horiz_pos_rel?"ENABLED":"DISABLED");
         return (filt_status.flags.pred_horiz_pos_rel);
     } else {
         return (filt_status.flags.horiz_pos_rel && !filt_status.flags.const_pos_mode);

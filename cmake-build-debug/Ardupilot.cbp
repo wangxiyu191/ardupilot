@@ -1,0 +1,3445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Ardupilot"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wxy/ardupilot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wxy/ardupilot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wxy/ardupilot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fake-target-for-clion">
+				<Option output="/home/wxy/ardupilot/cmake-build-debug/fake-target-for-clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wxy/ardupilot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSKETCHBOOK=&quot;./&quot;"/>
+					<Add option="-DCONFIG_HAL_BOARD=HAL_BOARD_PX4"/>
+					<Add directory="/home/wxy/ardupilot/APMrover2"/>
+					<Add directory="/home/wxy/ardupilot/ArduCopter"/>
+					<Add directory="/home/wxy/ardupilot/ArduPlane"/>
+					<Add directory="/home/wxy/ardupilot/libraries"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 fake-target-for-clion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fake-target-for-clion/fast">
+				<Option output="/home/wxy/ardupilot/cmake-build-debug/fake-target-for-clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wxy/ardupilot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSKETCHBOOK=&quot;./&quot;"/>
+					<Add option="-DCONFIG_HAL_BOARD=HAL_BOARD_PX4"/>
+					<Add directory="/home/wxy/ardupilot/APMrover2"/>
+					<Add directory="/home/wxy/ardupilot/ArduCopter"/>
+					<Add directory="/home/wxy/ardupilot/ArduPlane"/>
+					<Add directory="/home/wxy/ardupilot/libraries"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 fake-target-for-clion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wxy/ardupilot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl_Sub.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_AttitudeControl_Sub.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_PosControl.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_PosControl.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_PosControl_Sub.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/AC_PosControl_Sub.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_AttitudeControl/ControlMonitor.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Avoidance/AC_Avoid.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Avoidance/AC_Avoid.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Fence/AC_Fence.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Fence/AC_Fence.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Fence/AC_PolyFence_loader.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Fence/AC_PolyFence_loader.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_InputManager/AC_InputManager.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_InputManager/AC_InputManager.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_InputManager/AC_InputManager_Heli.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_InputManager/AC_InputManager_Heli.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_HELI_PID.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_HELI_PID.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_P.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_P.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_PID.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_PID.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_PI_2D.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/AC_PI_2D.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PID/examples/AC_PID_test/AC_PID_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_Companion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_Companion.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_IRLock.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_IRLock.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_SITL_Gazebo.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/AC_PrecLand_SITL_Gazebo.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/PosVelEKF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_PrecLand/PosVelEKF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Sprayer/AC_Sprayer.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_Sprayer/AC_Sprayer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_WPNav/AC_Circle.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_WPNav/AC_Circle.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_WPNav/AC_WPNav.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AC_WPNav/AC_WPNav.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/APM_Control.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_AutoTune.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_AutoTune.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_PitchController.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_PitchController.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_RollController.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_RollController.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_SteerController.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_SteerController.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_YawController.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/APM_Control/AP_YawController.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ADC/AP_ADC.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ADC/AP_ADC.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ADC/AP_ADC_ADS1115.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ADC/AP_ADC_ADS1115.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ADSB/AP_ADSB.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ADSB/AP_ADSB.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS_DCM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS_DCM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS_NavEKF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS_NavEKF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS_View.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/AP_AHRS_View.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AHRS/examples/AHRS_Test/AHRS_Test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AccelCal/AP_AccelCal.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AccelCal/AP_AccelCal.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AccelCal/AccelCalibrator.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AccelCal/AccelCalibrator.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AdvancedFailsafe/AP_AdvancedFailsafe.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_AdvancedFailsafe/AP_AdvancedFailsafe.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_MS4525.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_MS4525.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_MS5525.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_MS5525.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_analog.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/AP_Airspeed_analog.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/Airspeed_Calibration.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Airspeed/examples/Airspeed/Airspeed.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Arming/AP_Arming.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Arming/AP_Arming.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Avoidance/AP_Avoidance.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Avoidance/AP_Avoidance.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_BMP085.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_BMP085.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_BMP280.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_BMP280.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_HIL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_HIL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_MS5611.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_MS5611.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_QURT.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_QURT.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_UAVCAN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_UAVCAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_qflight.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/AP_Baro_qflight.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Baro/examples/BARO_generic/BARO_generic.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_Analog.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_Analog.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_Bebop.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_Bebop.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_SMBus.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_SMBus.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Maxell.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Maxell.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Solo.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/AP_BattMonitor_SMBus_Solo.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BattMonitor/examples/AP_BattMonitor_test/AP_BattMonitor_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_Marvelmind.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_Marvelmind.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_Pozyx.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_Pozyx.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/AP_Beacon_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Beacon/examples/AP_Marvelmind_test/AP_Marvelmind_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BoardConfig/AP_BoardConfig.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BoardConfig/AP_BoardConfig.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BoardConfig/AP_BoardConfig_CAN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BoardConfig/AP_BoardConfig_CAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BoardConfig/canbus.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_BoardConfig/px4_drivers.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Buffer/AP_Buffer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Button/AP_Button.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Button/AP_Button.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Camera/AP_Camera.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Camera/AP_Camera.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/AP_Common.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/AP_Common.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/AP_Test.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/Bitmask.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/Location.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/Location.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/c++.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/examples/AP_Common/AP_Common.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/missing/ap_version.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/missing/byteswap.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/missing/endian.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/missing/fcntl.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/missing/fenv.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Common/missing/sys/epoll.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_AK09916.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_AK09916.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_AK8963.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_AK8963.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_BMM150.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_BMM150.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_Calibration.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_HIL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_HIL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_HMC5843.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_HMC5843.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_IST8310.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_IST8310.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_LIS3MDL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_LIS3MDL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_LSM303D.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_LSM303D.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_LSM9DS1.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_LSM9DS1.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_MMC3416.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_MMC3416.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_QMC5883L.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_QMC5883L.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_QURT.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_QURT.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_UAVCAN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_UAVCAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_qflight.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/AP_Compass_qflight.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/CompassCalibrator.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/CompassCalibrator.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/Compass_learn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Compass/examples/AP_Compass_test/AP_Compass_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Declination/AP_Declination.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Declination/AP_Declination.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Declination/examples/AP_Declination_test/AP_Declination_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_FlashStorage/AP_FlashStorage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_FlashStorage/AP_FlashStorage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_FlashStorage/examples/FlashTest/FlashTest.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Frsky_Telem/AP_Frsky_Telem.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Frsky_Telem/AP_Frsky_Telem.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_ERB.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_ERB.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_GSOF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_GSOF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MAV.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MAV.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MTK.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MTK.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MTK19.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MTK19.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_MTK_Common.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_NMEA.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_NMEA.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_NOVA.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_NOVA.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_QURT.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_QURT.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SBF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SBF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SBP.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SBP.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SBP2.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SBP2.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SIRF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_SIRF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_UAVCAN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_UAVCAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_UBLOX.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/AP_GPS_UBLOX.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/GPS_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/GPS_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/GPS_detect_state.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/examples/GPS_AUTO_test/GPS_AUTO_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/examples/GPS_UBLOX_passthrough/GPS_UBLOX_passthrough.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_GPS/tests/test_gps.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper_EPM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper_EPM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper_Servo.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Gripper/AP_Gripper_Servo.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/AP_HAL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/AP_HAL_Boards.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/AP_HAL_Macros.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/AP_HAL_Main.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/AP_HAL_Namespace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/AnalogIn.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/CAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Device.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Device.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/GPIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/HAL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/HAL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/I2CDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/OpticalFlow.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/RCOutput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/SPIDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Util.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/board/empty.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/board/linux.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/board/px4.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/board/qurt.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/board/sitl.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/board/vrbrain.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/AnalogIn/AnalogIn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/Printf/Printf.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/RCInput/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/RCInputToRCOutput/RCInputToRCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/RCOutput/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/RCOutput2/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/Storage/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/examples/UART_test/UART_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/system.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/BetterStream.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/OwnPtr.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/Print.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/Print.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/RingBuffer.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/RingBuffer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/Socket.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/Socket.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/Stream.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/dsm.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/dsm.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/ftoa_engine.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/ftoa_engine.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/functor.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/getopt_cpp.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/getopt_cpp.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/print_vprintf.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/print_vprintf.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/sparse-endian.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/srxl.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/srxl.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/st24.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/st24.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/sumd.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/sumd.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/tests/test_own_ptr.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/utoa_invert.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL/utility/xtoa_fast.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/AP_HAL_Empty.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/AP_HAL_Empty_Namespace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/AP_HAL_Empty_Private.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/AnalogIn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/AnalogIn.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/GPIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/GPIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/HAL_Empty_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/HAL_Empty_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/I2CDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/OpticalFlow.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/PrivateMember.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/PrivateMember.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/RCOutput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/SPIDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Semaphores.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Empty/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AP_HAL_Linux.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_ADS1115.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_ADS1115.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_IIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_IIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_Navio2.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_Navio2.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_Raspilot.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/AnalogIn_Raspilot.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/CameraSensor.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/CameraSensor.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/CameraSensor_Mt9v117.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/CameraSensor_Mt9v117.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/CameraSensor_Mt9v117_Patches.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ConsoleDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ConsoleDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Flow_PX4.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Flow_PX4.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Aero.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Aero.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_BBB.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_BBB.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Bebop.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Bebop.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Disco.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Disco.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Minnow.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Minnow.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_RPI.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_RPI.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Sysfs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/GPIO_Sysfs.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/HAL_Linux_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/HAL_Linux_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Heat.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Heat_Pwm.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Heat_Pwm.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/I2CDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/I2CDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Led_Sysfs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Led_Sysfs.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/OpticalFlow_Onboard.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/OpticalFlow_Onboard.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/PWM_Sysfs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/PWM_Sysfs.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Perf.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Perf.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Perf_Lttng.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Perf_Lttng.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Perf_Lttng_TracePoints.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Poller.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Poller.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/PollerThread.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/PollerThread.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_115200.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_115200.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_AioPRU.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_AioPRU.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_DSM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_DSM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_Multi.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_Multi.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_Navio2.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_Navio2.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_PRU.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_PRU.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_RPI.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_RPI.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_Raspilot.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_Raspilot.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_SBUS.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_SBUS.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_UART.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_UART.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_UDP.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_UDP.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_UDP_Protocol.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_ZYNQ.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCInput_ZYNQ.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_AeroIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_AeroIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_AioPRU.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_AioPRU.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Bebop.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Bebop.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Disco.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Disco.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_PCA9685.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_PCA9685.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_PRU.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_PRU.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Raspilot.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Raspilot.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Sysfs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_Sysfs.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_ZYNQ.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_ZYNQ.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_qflight.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RCOutput_qflight.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RPIOUARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/RPIOUARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/SPIDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/SPIDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/SPIUARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/SPIUARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Semaphores.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/SerialDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/TCPServerDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/TCPServerDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Thread.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Thread.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ToneAlarm.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ToneAlarm.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ToneAlarm_Disco.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ToneAlarm_Disco.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ToneAlarm_Raspilot.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/ToneAlarm_Raspilot.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UARTDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UARTDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UARTQFlight.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UARTQFlight.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UDPDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/UDPDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Util.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Util_RPI.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/Util_RPI.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/VideoIn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/VideoIn.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/benchmarks/benchmark_videoin.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/examples/BusTest/BusTest.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/examples/GPIOTest/GPIOTest.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/px4io_protocol.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/qflight/dsp_functions.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/qflight/qflight_buffer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/qflight/qflight_util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/sbus.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/sbus.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/system.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_Linux/tests/test_thread.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/AP_HAL_PX4.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/AP_HAL_PX4_Namespace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/AnalogIn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/AnalogIn.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/CAN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/CAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Device.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Device.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/GPIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/GPIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/HAL_PX4_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/HAL_PX4_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/I2CDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/I2CDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/I2CWrapper.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/NSHShellStream.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/RCOutput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/RCOutput_Tap.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/RCOutput_Tap.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/SPIDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/SPIDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Semaphores.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Util.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/bxcan.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/examples/simple/simple.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/px4_param.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_PX4/system.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/AP_HAL_QURT.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/AP_HAL_QURT_Main.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/AP_HAL_QURT_Namespace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/AP_HAL_QURT_Private.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/HAL_QURT_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/HAL_QURT_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/RCOutput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Semaphores.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/UDPDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/UDPDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Util.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/dsp_main.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/mainapp/getifaddrs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/mainapp/mainapp.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/replace.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/replace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_QURT/system.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/AP_HAL_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/AP_HAL_SITL_Namespace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/AP_HAL_SITL_Private.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/AnalogIn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/AnalogIn.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/CAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/GPIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/GPIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/HAL_SITL_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/HAL_SITL_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/RCOutput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/SITL_State.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/SITL_State.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/SITL_cmdline.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Semaphores.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/sitl_airspeed.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/sitl_gps.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/sitl_rangefinder.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_SITL/system.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/AP_HAL_VRBRAIN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/AP_HAL_VRBRAIN_Namespace.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/AnalogIn.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/AnalogIn.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/GPIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/GPIO.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/HAL_VRBRAIN_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/HAL_VRBRAIN_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/I2CDevice.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/I2CDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/I2CWrapper.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/NSHShellStream.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/RCInput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/RCInput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/RCOutput.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/RCOutput.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Semaphores.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Semaphores.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Storage.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Storage.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/UARTDriver.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/UARTDriver.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Util.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/Util.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/system.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_HAL_VRBRAIN/vrbrain_param.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ICEngine/AP_ICEngine.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ICEngine/AP_ICEngine.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/AP_IRLock.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/AP_IRLock_I2C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/AP_IRLock_I2C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/AP_IRLock_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/AP_IRLock_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/IRLock.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_IRLock/IRLock.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialNav/AP_InertialNav.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialNav/AP_InertialNav_NavEKF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialNav/AP_InertialNav_NavEKF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_BMI160.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_BMI160.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_HIL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_HIL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_Invensense.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_Invensense.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_L3G4200D.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_LSM9DS0.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_PX4.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_PX4.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_QURT.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_QURT.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_qflight.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AP_InertialSensor_qflight.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AuxiliaryBus.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/AuxiliaryBus.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/examples/INS_generic/INS_generic.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_InertialSensor/examples/VibTest/VibTest.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_JSButton/AP_JSButton.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_JSButton/AP_JSButton.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_L1_Control/AP_L1_Control.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_L1_Control/AP_L1_Control.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Landing/AP_Landing.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Landing/AP_Landing.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Landing/AP_Landing_Deepstall.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Landing/AP_Landing_Deepstall.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Landing/AP_Landing_Slope.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LandingGear/AP_LandingGear.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LandingGear/AP_LandingGear.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector_Analog.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector_Analog.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector_Digital.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_LeakDetector/AP_LeakDetector_Digital.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/AP_GeodesicGrid.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/AP_GeodesicGrid.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/AP_Math.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/AP_Math.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/benchmarks/benchmark_geodesic_grid.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/benchmarks/benchmark_matrix.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/crc.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/crc.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/definitions.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/edc.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/edc.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/examples/eulers/eulers.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/examples/location/location.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/examples/matrix_alg/matrix_alg.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/examples/polygon/polygon.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/examples/rotations/rotations.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/location.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/location.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/matrix3.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/matrix3.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/matrixN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/matrixN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/matrix_alg.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/polygon.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/polygon.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/quaternion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/quaternion.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/rotations.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/math_test.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/test_closest_distance_between_radial_and_point.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/test_geodesic_grid.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/test_math.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/test_matrix3.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/test_perpendicular.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/tests/test_vector2.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/vector2.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/vector2.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/vector3.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/vector3.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Math/vectorN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Menu/AP_Menu.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Menu/AP_Menu.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mission/AP_Mission.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mission/AP_Mission.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mission/examples/AP_Mission_test/AP_Mission_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Module/AP_Module.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Module/AP_Module.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Module/AP_Module_Structures.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Module/examples/ModuleTest/ModuleTest.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_Motors.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_Motors6DOF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_Motors6DOF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsCoax.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsCoax.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli_Dual.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli_Dual.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli_RSC.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli_RSC.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli_Single.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsHeli_Single.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsMatrix.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsMatrix.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsMulticopter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsMulticopter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsSingle.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsSingle.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsTailsitter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsTailsitter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsTri.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_MotorsTri.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_Motors_Class.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/AP_Motors_Class.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Motors/examples/AP_Motors_test/AP_Motors_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_Alexmos.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_Alexmos.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_SToRM32.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_SToRM32.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_SToRM32_serial.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_SToRM32_serial.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_Servo.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_Servo.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_SoloGimbal.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/AP_Mount_SoloGimbal.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/SoloGimbal.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/SoloGimbal.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/SoloGimbalEKF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/SoloGimbalEKF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/SoloGimbal_Parameters.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/SoloGimbal_Parameters.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Mount/examples/trivial_AP_Mount/trivial_AP_Mount.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF/AP_Nav_Common.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF/Models/GimbalEstimatorExample/calcF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF/Models/GimbalEstimatorExample/calcH_MAG.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF/Models/GimbalEstimatorExample/calcP.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF/Models/GimbalEstimatorExample/calcQ.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_AirDataFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_Buffer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_Control.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_MagFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_Measurements.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_OptFlowFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_Outputs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_PosVelFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_RngBcnFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_VehicleStatus.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_core.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF2_core.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF2/AP_NavEKF_GyroBias.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_AirDataFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_Buffer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_Control.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_GyroBias.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_MagFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_Measurements.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_OptFlowFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_Outputs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_PosVelFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_RngBcnFusion.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_VehicleStatus.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_core.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_NavEKF3/AP_NavEKF3_core.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Navigation/AP_Navigation.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/AP_BoardLED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/AP_BoardLED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/AP_Notify.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/AP_Notify.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Buzzer.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Buzzer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/DiscoLED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/DiscoLED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/DiscreteRGBLed.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/DiscreteRGBLed.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display_SH1106_I2C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display_SH1106_I2C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display_SSD1306_I2C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/Display_SSD1306_I2C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ExternalLED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ExternalLED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/NavioLED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/NavioLED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/NavioLED_I2C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/NavioLED_I2C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/NotifyDevice.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/OreoLED_PX4.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/OreoLED_PX4.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/PixRacerLED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/PixRacerLED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/RCOutputRGBLed.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/RCOutputRGBLed.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/RGBLed.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/RGBLed.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToneAlarm_Linux.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToneAlarm_Linux.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToneAlarm_PX4.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToneAlarm_PX4.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToshibaLED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToshibaLED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToshibaLED_I2C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/ToshibaLED_I2C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/VRBoard_LED.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/VRBoard_LED.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/examples/AP_Notify_test/AP_Notify_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Notify/examples/ToshibaLED_test/ToshibaLED_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_NanoPi.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_NanoPi.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_Onboard.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_PX4Flow.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_PX4Flow.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_Pixart.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_Pixart.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_Pixart_SROM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/AP_OpticalFlow_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/OpticalFlow.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/OpticalFlow.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/OpticalFlow_backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/OpticalFlow_backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_OpticalFlow/examples/AP_OpticalFlow_test/AP_OpticalFlow_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Parachute/AP_Parachute.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Parachute/AP_Parachute.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Parachute/examples/AP_Parachute_test/AP_Parachute_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Param/AP_Param.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Param/AP_Param.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_LightWareSF40C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_LightWareSF40C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_MAV.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_MAV.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_RangeFinder.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_RangeFinder.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_TeraRangerTower.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Proximity/AP_Proximity_TeraRangerTower.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RCMapper/AP_RCMapper.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RCMapper/AP_RCMapper.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/AP_RPM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/AP_RPM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_PX4_PWM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_PX4_PWM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_Pin.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_Pin.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/RPM_SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RPM/examples/RPM_generic/RPM_generic.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RSSI/AP_RSSI.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RSSI/AP_RSSI.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Rally/AP_Rally.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Rally/AP_Rally.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_BBB_PRU.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_Bebop.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_Bebop.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_LeddarOne.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_LeddarOne.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_LightWareI2C.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_LightWareSerial.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_MAVLink.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarSerialLV.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarSerialLV.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_PX4_PWM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_PulsedLightLRF.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_VL53L0X.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_VL53L0X.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_analog.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_trone.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_trone.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_uLanding.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/AP_RangeFinder_uLanding.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/RangeFinder.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/RangeFinder.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/RangeFinder_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/RangeFinder_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_RangeFinder/examples/RFIND_test/RFIND_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Relay/AP_Relay.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Relay/AP_Relay.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Scheduler/AP_Scheduler.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Scheduler/AP_Scheduler.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Scheduler/examples/Scheduler_test/Scheduler_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_SerialManager/AP_SerialManager.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_SerialManager/AP_SerialManager.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_ServoRelayEvents/AP_ServoRelayEvents.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Soaring/AP_Soaring.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Soaring/AP_Soaring.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Soaring/ExtendedKalmanFilter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Soaring/ExtendedKalmanFilter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Soaring/Variometer.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Soaring/Variometer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_SpdHgtControl/AP_SpdHgtControl.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Stats/AP_Stats.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Stats/AP_Stats.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_TECS/AP_TECS.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_TECS/AP_TECS.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_TemperatureSensor/TSYS01.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_TemperatureSensor/TSYS01.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Terrain/AP_Terrain.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Terrain/AP_Terrain.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Terrain/TerrainGCS.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Terrain/TerrainIO.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Terrain/TerrainMission.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Terrain/TerrainUtil.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Tuning/AP_Tuning.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Tuning/AP_Tuning.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_UAVCAN/AP_UAVCAN.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_UAVCAN/AP_UAVCAN.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Vehicle/AP_Vehicle.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_Vehicle/AP_Vehicle_Type.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_VisualOdom/AP_VisualOdom.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_VisualOdom/AP_VisualOdom.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_VisualOdom/AP_VisualOdom_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_VisualOdom/AP_VisualOdom_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_VisualOdom/AP_VisualOdom_MAV.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/AP_VisualOdom/AP_VisualOdom_MAV.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DFMessageWriter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DFMessageWriter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_Backend.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_Backend.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_File.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_File.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_MAVLink.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_MAVLink.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/DataFlash_MAVLinkLogTransfer.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/LogFile.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/LogStructure.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/examples/DataFlash_AllTypes/DataFlash_AllTypes.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/DataFlash/examples/DataFlash_test/DataFlash_test.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/AverageFilter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/Butter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/DerivativeFilter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/DerivativeFilter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/Filter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/FilterClass.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/FilterWithBuffer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/LowPassFilter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/LowPassFilter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/LowPassFilter2p.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/LowPassFilter2p.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/ModeFilter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/examples/Derivative/Derivative.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/examples/Filter/Filter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/examples/LowPassFilter/LowPassFilter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/Filter/examples/LowPassFilter2p/LowPassFilter2p.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_Console/GCS_Console.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_Console/GCS_Console.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_Console/examples/Console/Console.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_Console/examples/Console/simplegcs.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_Console/examples/Console/simplegcs.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_Common.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_DeviceOp.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_Dummy.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_MAVLink.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_MAVLink.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_Param.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_Signing.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/GCS_serial_control.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/MAVLink_routing.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/MAVLink_routing.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/GCS_MAVLink/examples/routing/routing.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/PID/PID.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/PID/PID.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/PID/examples/pid/pid.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/RC_Channel/RC_Channel.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/RC_Channel/RC_Channel.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/RC_Channel/RC_Channels.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/RC_Channel/examples/RC_Channel/RC_Channel.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/RC_Channel/examples/RC_UART/RC_UART.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/Frame_Vectored.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_ADSB.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_ADSB.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Aircraft.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Aircraft.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Balloon.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Balloon.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_CRRCSim.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_CRRCSim.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Calibration.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Calibration.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_FlightAxis.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_FlightAxis.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Frame.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Frame.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gazebo.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gazebo.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gimbal.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gimbal.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gripper_EPM.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gripper_EPM.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gripper_Servo.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Gripper_Servo.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Helicopter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Helicopter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_ICEngine.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_ICEngine.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_JSBSim.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_JSBSim.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Motor.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Motor.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Multicopter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Multicopter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Plane.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Plane.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_QuadPlane.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_QuadPlane.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Rover.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Rover.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_SingleCopter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_SingleCopter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Sprayer.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Sprayer.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Submarine.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Submarine.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Tracker.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_Tracker.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_XPlane.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_XPlane.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_last_letter.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SIM_last_letter.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SITL.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SITL/SITL.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SRV_Channel/SRV_Channel.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SRV_Channel/SRV_Channel.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SRV_Channel/SRV_Channel_aux.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/SRV_Channel/SRV_Channels.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/StorageManager/StorageManager.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/StorageManager/StorageManager.h">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/libraries/StorageManager/examples/StorageTest/StorageTest.cpp">
+			<Option target="fake-target-for-clion"/>
+		</Unit>
+		<Unit filename="/home/wxy/ardupilot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
