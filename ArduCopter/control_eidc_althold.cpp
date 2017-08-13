@@ -61,7 +61,7 @@ void Copter::eidc_althold_run()
         target_yaw_rate = get_pilot_desired_yaw_rate(channel_yaw->get_control_in());
 
         // get pilot desired climb rate
-        target_climb_rate = 2.5;
+        target_climb_rate = 70;
         target_climb_rate = constrain_float(target_climb_rate, -g.pilot_velocity_z_max, g.pilot_velocity_z_max);
 
         target_climb_altitude = get_pilot_desired_altitude(channel_throttle->get_control_in());
